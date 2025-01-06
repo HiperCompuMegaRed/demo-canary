@@ -1,9 +1,9 @@
-FROM golang:1.16 as build
+FROM docker.io/library/golang:1.16 as build
 WORKDIR /go/src/app
 COPY . .
 RUN make
 
-FROM debian
+FROM docker.io/library/debian:latest
 COPY *.html ./
 COPY *.png ./
 COPY *.js ./
