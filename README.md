@@ -6,7 +6,8 @@ This is an application for demo purposes.
 Set color in version file
 ```bash
 vim version
-...
+```
+```bash
 # Set colors: yellow | pink | violet
 COLOR=yellow
 ```
