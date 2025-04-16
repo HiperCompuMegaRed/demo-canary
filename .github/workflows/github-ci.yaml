@@ -17,6 +17,8 @@ jobs:
       projectName: 'examples'
 #-------------------------------------------------------------------------------------------------#
 ## Features  -------------------------------------------------------------------------------------#
+    # Multicluster
+      multiclusterTag: "flor, juan, pedro"
     # Approvals
       shamanopsBusinessApprovers: 'rocajp@gmail.com'
       shamanopsTechnicalApprovers: 'jroca@shamanops.com'
