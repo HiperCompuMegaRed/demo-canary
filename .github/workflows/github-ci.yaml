@@ -18,7 +18,7 @@ jobs:
 #-------------------------------------------------------------------------------------------------#
 ## Features  -------------------------------------------------------------------------------------#
     # Multicluster
-      multiclusterTag: "main, flor, juan, pedro"
+      multiclusterTag: "main, gke, pedro"
       security_check_enabled: 'false'
       shamanopsApprovalsProd: 'false'
 #-------------------------------------------------------------------------------------------------#
@@ -26,6 +26,8 @@ jobs:
       shamanops_customer_token: ${{ secrets.shamanops_customer_token }}
       shamanops_argocd_dev_token: ${{ secrets.shamanops_argocd_dev_token }}
       shamanops_argocd_dev_plus_token: ${{ secrets.shamanops_argocd_dev_plus_token }}
+      shamanops_argocd_stg_plus_token: ${{ secrets.shamanops_argocd_stg_plus_token }}
+      shamanops_argocd_prod_plus_token: ${{ secrets.shamanops_argocd_prod_plus_token }}
       shamanops_argocd_stg_token: ${{ secrets.shamanops_argocd_stg_token }}
       shamanops_argocd_prod_token: ${{ secrets.shamanops_argocd_prod_token }}
       shamanops_argocd_drp_token: ${{ secrets.shamanops_argocd_drp_token }}
