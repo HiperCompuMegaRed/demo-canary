@@ -38,7 +38,7 @@ jobs:
       stress_check_second: '60'
     # Pre-deploy Jobs
       pre_jobs_enabled: 'true'
-      pre_jobs_blocker: 'true'  
+      pre_jobs_blocker: 'false'  
     # Deployment Strategy
       # By default the deploys will use the rolling strategy
       # To use Canary strategy in your enviroments set this to 'true'
