@@ -36,6 +36,9 @@ jobs:
       stress_check_upPeriod: '10'
       # Specify how long the task should last
       stress_check_second: '60'
+    # Pre-deploy Jobs
+      pre_jobs_enabled: 'true'
+      pre_jobs_blocker: 'true'  
     # Deployment Strategy
       # By default the deploys will use the rolling strategy
       # To use Canary strategy in your enviroments set this to 'true'
