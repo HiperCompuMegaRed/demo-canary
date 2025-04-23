@@ -11,14 +11,14 @@ jobs:
     uses: shamanops/resources/.github/workflows/base-rc.yaml@main
     with:
     # Environments:
-    # full-with-drp (dev/stg/prod/drp) | full (dev/stg/prod) | mid (stg/prod) | minimal (prod)
-      environments: 'full'
+    # full-with-drp (dev/stg/prod/drp) | full (dev/stg/prod) | mid (stg/prod) | minimal (prod) | 
+      environments: 'available'
     # Project
       projectName: 'examples'
 #-------------------------------------------------------------------------------------------------#
 ## Features  -------------------------------------------------------------------------------------#
     # Multicluster
-      multiclusterTag: "main, gke, pedro"
+      multiclusterTag: "pedro, pablo"
       security_check_enabled: 'false'
       shamanopsApprovalsProd: 'false'
 #-------------------------------------------------------------------------------------------------#
