@@ -18,7 +18,7 @@ jobs:
 #-------------------------------------------------------------------------------------------------#
 ## Features  -------------------------------------------------------------------------------------#
     # Multicluster
-      multiclusterTag: "gke"
+      multiclusterTag: "gke, main"
     # Approvals
       shamanopsBusinessApprovers: 'jroca@shamanops.com'
       shamanopsTechnicalApprovers: 'flifschitz@shamanops.com'
