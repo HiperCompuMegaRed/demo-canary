@@ -12,13 +12,13 @@ jobs:
     with:
     # Environments:
     # full-with-drp (dev/stg/prod/drp) | full (dev/stg/prod) | mid (stg/prod) | minimal (prod) | 
-      environments: 'available'
+      environments: 'full'
     # Project
       projectName: 'examples'
 #-------------------------------------------------------------------------------------------------#
 ## Features  -------------------------------------------------------------------------------------#
     # Multicluster
-      multiclusterTag: "main, gke"
+      #multiclusterTag: "main, gke"
       stress_check_enabled: 'true'
       stress_check_blocker: 'false'
       security_check_enabled: 'false'
