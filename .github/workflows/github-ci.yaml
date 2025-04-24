@@ -12,7 +12,7 @@ jobs:
     with:
     # Environments:
     # full-with-drp (dev/stg/prod/drp) | full (dev/stg/prod) | mid (stg/prod) | minimal (prod)
-      environments: 'available'
+      environments: 'minimal'
     # Project
       projectName: 'examples'
 #-------------------------------------------------------------------------------------------------#
@@ -24,11 +24,10 @@ jobs:
       shamanopsTechnicalApprovers: 'jroca@shamanops.com'
       shamanopsBusinessApproversMinimalProd: '0'
       shamanopsTechnicalApproversMinimalProd: '1'
+      shamanopsApprovalsProd: 'false'
     # Deployment Strategy
       # By default the deploys will use the rolling strategy
       # To use Canary strategy in your enviroments set this to 'true'
-      strategyCanaryDev: 'false'
-      strategyCanaryStg: 'false'
       strategyCanaryProd: 'true'  
 #-------------------------------------------------------------------------------------------------#
     secrets:
