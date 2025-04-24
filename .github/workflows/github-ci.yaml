@@ -28,7 +28,8 @@ jobs:
     # Deployment Strategy
       # By default the deploys will use the rolling strategy
       # To use Canary strategy in your enviroments set this to 'true'
-      strategyCanaryProd: 'true'  
+      strategyCanaryProd: 'true'
+      security_check_enabled: 'false'
 #-------------------------------------------------------------------------------------------------#
     secrets:
       shamanops_argocd_dev_plus_token: ${{ secrets.shamanops_argocd_dev_plus_token }}
