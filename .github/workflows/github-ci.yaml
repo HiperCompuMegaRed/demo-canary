@@ -20,7 +20,7 @@ jobs:
     # Multicluster
       multiclusterTag: "main, gke"
     # Approvals
-      shamanopsBusinessApprovers: 'jroca@shamanops.com'
+      shamanopsBusinessApprovers: 'rocajp@gmail.com'
       shamanopsTechnicalApprovers: 'jroca@shamanops.com'
       shamanopsBusinessApproversMinimalProd: '0'
       shamanopsTechnicalApproversMinimalProd: '1'
