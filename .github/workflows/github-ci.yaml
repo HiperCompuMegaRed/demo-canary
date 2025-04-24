@@ -21,30 +21,15 @@ jobs:
       multiclusterTag: "main, gke"
     # Approvals
       shamanopsBusinessApprovers: 'jroca@shamanops.com'
-      shamanopsTechnicalApprovers: 'flifschitz@shamanops.com'
+      shamanopsTechnicalApprovers: 'jroca@shamanops.com'
       shamanopsBusinessApproversMinimalProd: '0'
       shamanopsTechnicalApproversMinimalProd: '1'
-    # Stress Check
-      stress_check_enabled: 'true'
-      stress_check_blocker: 'false'
-    # Stress Check | Customization
-      # Specify the maximum percentage of errors that are allowed before the task is stopped
-      stress_check_error_rate_max: '15'
-      # Specify the number of threads (that simulates a number of users)
-      stress_check_thread: '19'
-      # Specify the amount of time that it takes to start all of the threads
-      stress_check_upPeriod: '10'
-      # Specify how long the task should last
-      stress_check_second: '60'
-    # Pre-deploy Jobs
-      pre_jobs_enabled: 'true'
-      pre_jobs_blocker: 'false'  
     # Deployment Strategy
       # By default the deploys will use the rolling strategy
       # To use Canary strategy in your enviroments set this to 'true'
       strategyCanaryDev: 'false'
-      strategyCanaryStg: 'true'
-      strategyCanaryProd: 'false'  
+      strategyCanaryStg: 'false'
+      strategyCanaryProd: 'true'  
 #-------------------------------------------------------------------------------------------------#
     secrets:
       shamanops_argocd_dev_plus_token: ${{ secrets.shamanops_argocd_dev_plus_token }}
