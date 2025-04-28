@@ -21,7 +21,7 @@ jobs:
 ## Features  -------------------------------------------------------------------------------------#
     # Approvals
       shamanopsBusinessApprovers: 'rocajp@gmail.com'
-      shamanopsTechnicalApprovers: 'jroca@shamanops.com, mmora@shamanops.com'
+      shamanopsTechnicalApprovers: 'flifschitz@shamanops.com, mmora@shamanops.com, jroca@shamanops.com'
       shamanopsBusinessApproversMinimalProd: '1'
       shamanopsTechnicalApproversMinimalProd: '1'
       strategyCanaryProd: 'true'
