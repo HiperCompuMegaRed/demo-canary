@@ -8,21 +8,25 @@ on:
     branches: [ "main" ]
 jobs:
   shamanops:
-    uses: shamanops/resources/.github/workflows/base-stable.yaml@main
+    uses: shamanops/resources/.github/workflows/base-rc.yaml@main
     with:
     # Environments:
     # full-with-drp (dev/stg/prod/drp) | full (dev/stg/prod) | mid (stg/prod) | minimal (prod)
       environments: 'minimal'
     # Project
       projectName: 'examples'
+# Multicluster
+      multiclusterTag: "main, violet, pink, green"
 #-------------------------------------------------------------------------------------------------#
 ## Features  -------------------------------------------------------------------------------------#
     # Approvals
-      shamanopsBusinessApprovers: 'jroca@shamanops.com'
+      shamanopsBusinessApprovers: 'rocajp@gmail.com'
       shamanopsTechnicalApprovers: 'jroca@shamanops.com, mmora@shamanops.com'
       shamanopsBusinessApproversMinimalProd: '1'
       shamanopsTechnicalApproversMinimalProd: '1'
-      strategyCanaryProd: 'true'
+      strategyCanaryProd: 'false'
+    # SCA check
+      security_check_enabled: 'false'
     # Log level
       log_level: 'debug'
 #-------------------------------------------------------------------------------------------------#
@@ -37,5 +41,8 @@ jobs:
       shamanops_registry_password: ${{ secrets.shamanops_registry_password }}
       shamanops_secondary_registry_password: ${{ secrets.shamanops_secondary_registry_password }}
       shamanops_dockerfile_token: ${{ secrets.shamanops_dockerfile_token }}
+      shamanops_argocd_dev_plus_token: ${{ secrets.shamanops_argocd_dev_plus_token }}
+      shamanops_argocd_stg_plus_token: ${{ secrets.shamanops_argocd_stg_plus_token }}
+      shamanops_argocd_prod_plus_token: ${{ secrets.shamanops_argocd_prod_plus_token }}
 ##################################################################################################
 ##################################################################################################
