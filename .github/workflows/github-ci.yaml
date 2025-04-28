@@ -28,6 +28,14 @@ jobs:
       shamanopsApprovalsProd: 'false'
     # SCA check
       security_check_enabled: 'false'
+      # Enable Dynamics Enviroments
+      shamanopsDynamicEnvsEnabled: 'true'
+    # Dynamics Enviroments list
+      shamanopsDynamicEnvs: 'flor'
+    # Dynamics Enviroments Approvals
+      shamanopsApprovalsDynamicEnvs: 'true'
+      shamanopsBusinessApproversMinimalDynamicEnvs: '0'
+      shamanopsTechnicalApproversMinimalDynamicEnvs: '1'
 #-------------------------------------------------------------------------------------------------#
     secrets:
       shamanops_customer_token: ${{ secrets.shamanops_customer_token }}
