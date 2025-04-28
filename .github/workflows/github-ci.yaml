@@ -24,7 +24,7 @@ jobs:
       shamanopsTechnicalApprovers: 'flifschitz@shamanops.com, mmora@shamanops.com, jroca@shamanops.com'
       shamanopsBusinessApproversMinimalProd: '1'
       shamanopsTechnicalApproversMinimalProd: '1'
-      strategyCanaryProd: 'true'
+      strategyCanaryProd: 'false'
       shamanopsApprovalsProd: 'false'
     # SCA check
       security_check_enabled: 'false'
