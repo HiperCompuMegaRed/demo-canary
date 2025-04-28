@@ -24,7 +24,8 @@ jobs:
       shamanopsTechnicalApprovers: 'jroca@shamanops.com, mmora@shamanops.com'
       shamanopsBusinessApproversMinimalProd: '1'
       shamanopsTechnicalApproversMinimalProd: '1'
-      strategyCanaryProd: 'false'
+      strategyCanaryProd: 'true'
+      shamanopsApprovalsProd: 'false'
     # SCA check
       security_check_enabled: 'false'
     # Log level
