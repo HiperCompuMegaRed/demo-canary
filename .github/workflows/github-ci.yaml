@@ -16,7 +16,7 @@ jobs:
     # Project
       projectName: 'examples'
 # Multicluster
-      multiclusterTag: "main, violet, pink, green"
+      multiclusterTag: "main, gke"
 #-------------------------------------------------------------------------------------------------#
 ## Features  -------------------------------------------------------------------------------------#
     # Approvals
