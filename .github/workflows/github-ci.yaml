@@ -29,7 +29,7 @@ jobs:
     # SCA check
       security_check_enabled: 'false'
       # Enable Dynamics Enviroments
-      shamanopsDynamicEnvsEnabled: 'true'
+      shamanopsDynamicEnvsEnabled: 'false'
     # Dynamics Enviroments list
       shamanopsDynamicEnvs: 'flor'
     # Dynamics Enviroments Approvals
